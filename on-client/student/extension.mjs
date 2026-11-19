@@ -490,7 +490,7 @@ export function createStudentView() {
       const modeLabels = { connected: '연결됨', demo: '예제 자료', disconnected: '연결 없음', unknown: '확인 불가' };
       addText('앱 내부 AI 연결 점검');
       addText(`서버 자료 연결 상태: ${modeLabels[mode] || '확인 불가'}`);
-      const manual = '다시 점검하려면 「AI 연결 점검」 버튼을 직접 누르세요. 자동으로 다시 요청하지 않습니다.';
+      const manual = '다시 점검하려면 「현재 API 연결 점검」 버튼을 직접 누르세요. 자동으로 다시 요청하지 않습니다.';
 
       if (status === 'idle') {
         addText('AI 연결 점검 전');
